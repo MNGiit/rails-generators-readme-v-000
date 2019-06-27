@@ -33,6 +33,6 @@ class PostsController < ApplicationController
   
   def post_params # (*args)
     # params.require(:school_class).permit(*args) # doesn't work in this case I think
-    params.require(:school_class).permit(:title, :room_number)
+    params.require(:post).permit(:title, :description, :post_status)
   end
 end
